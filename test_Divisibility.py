@@ -43,10 +43,12 @@ class KnownValues(unittest.TestCase):
         match = matches[0]
         self.assertEquals("try:", match)
         
-    def test_except_ValueError_present(self):
+    def test_except_block_present(self):
         matches = re.findall("except ValueError:", self.scripttext)
-        match = matches[0]
-        self.assertEquals("except ValueError:", match)
+        matches += re.findall("except:", self.scripttext)
+        matches += re.findall("except ZeroDivisionError:", self.scripttext)
+        hasMatch = bool(matches)
+        self.assertEquals(True, hasMatch)
 # Run the tests
 if __name__ == '__main__':
     unittest.main()
