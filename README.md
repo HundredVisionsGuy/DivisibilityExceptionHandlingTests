@@ -3,12 +3,12 @@ A Python 1 Exception Handling UnitTest Challenge
 
 **Goal:**
 ----------
-You will write a math function that is designed to not only solve a math problem but also handles incorrect inputs (ZeroDivisionErrors, TypeErrors/ValueErrors)
+You will write a math function that is designed to not only solve a math problem but also handle incorrect inputs (ZeroDivisionErrors, TypeErrors/ValueErrors)
 
 **Inputs:**
 ----------
 * `divisibilty()` receives 2 inputs: (numerator & denominator) and returns one of the following outputs:
- * "divides evenly" - if the numbers divide evenly (like `4 / 2`))
+ * "divides evenly" - if the numbers divide evenly (like `4 / 2`)
  * "doesn't divide evenly" - if the numerator is not evenly divisible by the denominator (like `5 / 2`)
  * "error" - if the inputs cannot be converted to integers (or floats) OR the denominator is `0` (since you cannot divide by 0)
  * **NOTE**: divisibility() should be able to accept strings provided they can be converted to a number (e.g. `divisibility('10', '3')`)
